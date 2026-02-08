@@ -33,3 +33,5 @@ def test_status_endpoint():
     assert data["service"] == "FastAPI Health Check Service"
     assert "timestamp" in data
     assert "uptime" in data
+    # Check that uptime is a valid format (contains time units)
+    assert any(unit in data["uptime"] for unit in ["s", "m", "h", "d"])
