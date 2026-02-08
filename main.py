@@ -13,7 +13,7 @@ APP_START_TIME = time.time()
 async def root():
     """Root endpoint"""
     return {
-        "message": "Hello! Welcome to FastAPI Health Check Service!",
+        "message": "Hello Rushi! Welcome to FastAPI Health Check Service!",
         "status": "running"
     }
 
